@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+body {
+    background-color: #101820;
+}
+h1,h2,h3{
+  color: #e5e5e5;
+  font-family: 'Jost', sans-serif;
+  padding-top: .33%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.meme_div {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img {
+  object-fit: contain;
+  width: 650px;
+  height: 650px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 702px){
+  img {
+  object-fit: contain;
+  width: 300px;
+  height: 600px;
+  padding-bottom: 2px;
+  }
+  h1,h2,h3{
+    color: #e5e5e5;
+    font-family: 'Jost', sans-serif;
+  }
+}
