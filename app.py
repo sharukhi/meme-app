@@ -30,5 +30,5 @@ def root():
     
 
 
-app.run(debug=True)
+app.run()
 
