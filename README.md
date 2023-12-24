@@ -30,7 +30,7 @@ python app.py
 
 
 ## Licence
-MakeQRC is licenced under [MIT](https://github.com/Sharukhi/meme-app/blob/main/LICENSE) and anyone wanting to use it (as a base for your own project or even use some of its parts or features) has to adhere to this license completely. Make sure that you are aware of all the licensing terms before creating your own project based on this project.
+This project is licenced under [MIT](https://github.com/Sharukhi/meme-app/blob/main/LICENSE) and anyone wanting to use it (as a base for your own project or even use some of its parts or features) has to adhere to this license completely. Make sure that you are aware of all the licensing terms before creating your own project based on this project.
 
 
 ## Contribution
