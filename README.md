@@ -1,12 +1,12 @@
+
 <div align="center">
   <p>
       <img style="width: 125px;" src="static/ico.png">
   </p>
   <h2> Meme App </h2>
 
-
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v3/monitor/zohy.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 </div>
-
 
 
 
