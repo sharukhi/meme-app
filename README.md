@@ -17,7 +17,7 @@
 git clone https://github.com/sharukhi/flask-starter.git
 ```
 ```bash 
-cd flask-starter 
+cd meme-app
 ```
 ```bash 
 pip install -r requirements.txt
