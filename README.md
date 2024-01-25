@@ -14,7 +14,7 @@
 ## Local Setup
 
 ```bash 
-git clone https://github.com/sharukhi/flask-starter.git
+git clone https://github.com/Sharukhi/meme-app.git
 ```
 ```bash 
 cd meme-app
