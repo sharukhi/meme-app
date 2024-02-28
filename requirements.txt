@@ -1,3 +1,4 @@
 Flask
 requests
 Gunicorn
+Werkzeug==2.2.2
