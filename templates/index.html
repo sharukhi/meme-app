@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static',filename='style.css') }}"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="{{ url_for('static',filename='ico.png') }}"
-    />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Meme App</title>
-  </head>
-  <body>
-    <center>
-      <div class="meme_div">
-        <img class="meme" src="{{meme_url}}" alt="" />
-        <h2>{{title}}</h2>
-        <a  href="/"> <div class="new"><i class='bx bx-refresh'></i></div></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='ico.png') }}" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Meme App</title>
+</head>
+<script>
+  function share_meme() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Check out this Meme I found on Meme App',
+        text: 'Check out this Meme I found on Meme App',
+        url: '{{reddit_url}}',
+      })
+        .then(() => console.log('Successful share'))
+        .catch((error) => console.log('Error sharing', error));
+    }
+  }
+
+</script>
+
+<body>
+  <center>
+    <div class="meme_div">
+      <img class="meme" src="{{meme_url}}" alt="" />
+      <h2>{{title}}</h2>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button onclick="location.reload()">
+          <div class="new"><i class='bx bx-refresh'></i></div>
+        </button>
+        <button onclick="share_meme()">
+          <div class="share"><i class='bx bxs-share-alt'></i></div>
+        </button>
       </div>
-    </center>
-  </body>
+    </div>
+  </center>
+</body>
+
 </html>

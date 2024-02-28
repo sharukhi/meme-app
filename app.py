@@ -8,7 +8,7 @@ app = Flask(__name__)
 def root():
 
 
-    url = "https://meme-api.com/gimme/1/"
+    url = "https://meme-api.com/gimme/ProgrammerHumor/1/"
     meme_api_response = requests.get(url)
     response_json = meme_api_response.json()
 
@@ -18,12 +18,13 @@ def root():
     title = response_json["memes"][0]["title"]
     author = response_json["memes"][0]["author"]
     subreddit = response_json["memes"][0]["subreddit"]
+    reddit_url = response_json["memes"][0]["postLink"]
     
     
     if check_nsfw_meme == "true":
         return redirect('/' , code=302)
     else:
-        return render_template('index.html', meme_url=meme_url , title=title, author=author, subreddit=subreddit)
+        return render_template('index.html', meme_url=meme_url , title=title, author=author, subreddit=subreddit, reddit_url=reddit_url)
 
 
 
@@ -38,5 +39,5 @@ def internal_error(error):
     
 
 
-app.run()
+app.run(host='0.0.0.0', port=5000 )
 
