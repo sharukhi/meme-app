@@ -5,7 +5,7 @@
   </p>
   <h2> Meme App </h2>
 
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v3/monitor/zohy.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v3/monitor/11u3z.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 </div>
 
 
