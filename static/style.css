@@ -4,8 +4,9 @@ body {
 }
 
 .new{
-  font-size: 40px;
+  font-size: 50px;
   color:  #ffffff;
+  opacity: 90%;
   background-color: #ff4b4b;
   border-radius: 10px;
   width: 50px;
@@ -13,12 +14,13 @@ body {
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  line-height: 50px;     
+  line-height: 50px;  
 }
 .share{
   color: #ffffff;
+  opacity: 90%;
   align-items: center;
-  font-size: 40px;
+  font-size: 50px;
   background-color: #262730;
   width: 50px;
   height: 50px;
