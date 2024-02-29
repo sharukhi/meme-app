@@ -1,14 +1,33 @@
 from flask import *
 import requests
-
+import random
 
 app = Flask(__name__)
 
 @app.route('/')
 def root():
+    subreddit_list = [
+    {
+      "name": 'memes'
+    },
+    {
+      "name": 'wholesomememes'
+    },
+    {
+      "name": 'AdviceAnimals'
+    },
+    {
+      "name": 'dankmemes'
+    }
+    ]
+  
+    
+    subreddit = random.choice(subreddit_list)
+    subreddit = str({subreddit['name']})[1:-1]
+    subreddit = subreddit.replace("'", '')
 
 
-    url = "https://meme-api.com/gimme/ProgrammerHumor/1/"
+    url = f"https://meme-api.com/gimme/{subreddit}/1/"
     meme_api_response = requests.get(url)
     response_json = meme_api_response.json()
 
